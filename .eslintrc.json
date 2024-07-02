@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "plugin:prettier/recommended",
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-undef": "error",
+    "react/prop-types": 0,
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": false
+      }
+    ],
+    "comma-dangle": ["error", "always-multiline"],
+    "no-extra-boolean-cast": 0,
+    "@typescript-eslint/no-empty-function": 0
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "node": true
+  }
+}
